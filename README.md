@@ -52,6 +52,7 @@ Tecnologias Utilizadas
     .Axios
 
 Estrutura de Arquivos
+
     sistema-de-cadastro/
     ├── backend/
     │   ├── db.js
@@ -73,8 +74,8 @@ Estrutura de Arquivos
 
 Banco de Dados (MySQL)
    Siga o script para criar a tabela "cadastro"
-
-   CREATE TABLE `cadastro` ( 
+````
+CREATE TABLE `cadastro` ( 
   `idCadastro` INT AUTO_INCREMENT NOT NULL,
   `nome` VARCHAR(150) NOT NULL,
   `email` VARCHAR(150) NOT NULL,
@@ -84,13 +85,14 @@ Banco de Dados (MySQL)
   `senha` VARCHAR(45) NOT NULL,
   CONSTRAINT `PRIMARY` PRIMARY KEY (`idCadastro`)
 );
+````
 
-Criado e idealizado por: 
-   William Reis, Rodrigo Alvarez e Enzo Patti
+Criado e idealizado por:
+> William Reis, Rodrigo Alvarez e Enzo Patti
 
-Contribuição
-    Contribuições são bem-vindas! Se encontrar algum problema ou tiver sugestões de melhorias, por favor, abra uma issue ou envie um pull request.
+Contribuição:
+> Contribuições são bem-vindas! Se encontrar algum problema ou tiver sugestões de melhorias, por favor, abra uma issue ou envie um pull request.
 
-Licença
-    Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE.md para mais detalhes.
+Licença:
+> Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE.md para mais detalhes.
 
