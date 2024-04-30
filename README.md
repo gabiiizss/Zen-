@@ -18,7 +18,7 @@ Antes de iniciar, você precisa ter o Node.js e o MySQL instalados na sua máqui
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/willreis/cadastroUsuario.git
+   git clone https://github.com/willreis/sistemaCadastro.git
 
    ```
 
