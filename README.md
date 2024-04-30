@@ -67,12 +67,12 @@ Antes de iniciar, você precisa ter o Node.js e o MySQL instalados na sua máqui
 
 11. Acesse o sistema em http://localhost:3000.
 
-Tecnologias Utilizadas
-    > .React
-    > .Node.js
-    > .Express
-    > .MySQL
-    > .Axios
+## Tecnologias Utilizadas
+   > - React
+   > - Node.js
+   > - Express
+   > - MySQL
+   > - Axios
 
 ## Estrutura de Arquivos
 
