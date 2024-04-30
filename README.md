@@ -23,35 +23,58 @@ Antes de iniciar, você precisa ter o Node.js e o MySQL instalados na sua máqui
    ```
 
 2. Navegue até o diretório do projeto:
+    ````
    cd sistema-de-cadastro
+   ````
 
-3. Instale as dependências do frontend e do backend:
+4. Instale as dependências do frontend e do backend:
+   ````
    cd frontend
    npm install
+   ````
+   Após
+   ````
    cd ../backend
    npm install
+   ````
 
-4. Configuração do Banco de Dados:
-   Execute o script SQL fornecido (script.sql) para criar a tabela cadastros.
+6. Configuração do Banco de Dados:
+   Execute o script SQL fornecido abaixo para criar a tabela cadastros.
+   ````
+   CREATE TABLE `cadastro` ( 
+     `idCadastro` INT AUTO_INCREMENT NOT NULL,
+     `nome` VARCHAR(150) NOT NULL,
+     `email` VARCHAR(150) NOT NULL,
+     `telefone` VARCHAR(20) NOT NULL,
+     `cpf` VARCHAR(20) NOT NULL,
+     `endereco` VARCHAR(250) NOT NULL,
+     `senha` VARCHAR(45) NOT NULL,
+     CONSTRAINT `PRIMARY` PRIMARY KEY (`idCadastro`)
+   );
+   ````
 
-5. Inicie o servidor backend:
+7. Inicie o servidor backend:
+   ````
    cd backend
    node server.js
+   ````
 
-6. Inicie o servidor frontend:
+9. Inicie o servidor frontend:
+   ````
    cd frontend
    npm start
+   ````
 
-7. Acesse o sistema em http://localhost:3000.
+11. Acesse o sistema em http://localhost:3000.
 
 Tecnologias Utilizadas
-    .React
-    .Node.js
-    .Express
-    .MySQL
-    .Axios
+    > .React
+    > .Node.js
+    > .Express
+    > .MySQL
+    > .Axios
 
-Estrutura de Arquivos
+## Estrutura de Arquivos
 
     sistema-de-cadastro/
     ├── backend/
@@ -72,27 +95,12 @@ Estrutura de Arquivos
     │   └── ...
     └── README.md
 
-Banco de Dados (MySQL)
-   Siga o script para criar a tabela "cadastro"
-````
-CREATE TABLE `cadastro` ( 
-  `idCadastro` INT AUTO_INCREMENT NOT NULL,
-  `nome` VARCHAR(150) NOT NULL,
-  `email` VARCHAR(150) NOT NULL,
-  `telefone` VARCHAR(20) NOT NULL,
-  `cpf` VARCHAR(20) NOT NULL,
-  `endereco` VARCHAR(250) NOT NULL,
-  `senha` VARCHAR(45) NOT NULL,
-  CONSTRAINT `PRIMARY` PRIMARY KEY (`idCadastro`)
-);
-````
-
-Criado e idealizado por:
+## Criado e idealizado por:
 > William Reis, Rodrigo Alvarez e Enzo Patti
 
-Contribuição:
+## Contribuição:
 > Contribuições são bem-vindas! Se encontrar algum problema ou tiver sugestões de melhorias, por favor, abra uma issue ou envie um pull request.
 
-Licença:
+## Licença:
 > Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE.md para mais detalhes.
 
