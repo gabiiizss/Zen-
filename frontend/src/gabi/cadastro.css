@@ -1,0 +1,72 @@
+/* Cadastro.css e Login.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Para ocupar toda a altura da tela */
+  margin: 0;
+  background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+.container {
+  display: flex;
+  align-items: stretch; /* Faz com que os itens dentro ocupem toda a altura do container */
+  justify-content: center;
+  background-color: #ffccf200; /* Cor de fundo rosa */
+  padding: 0; /* Remove o padding do container para que a imagem ocupe todo o espaço */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Largura máxima do container */
+  margin: auto;
+}
+
+.imagem-container {
+  flex: 1; /* A imagem ocupa metade do container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-container img {
+  width: 98%; /* A imagem ocupa 100% da largura da imagem-container */
+  height: auto; /* A altura se ajusta automaticamente para manter a proporção */
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura do container */
+  object-fit: contain; /* Mantém a proporção da imagem dentro do espaço disponível */
+  border-radius: 10px 0 0 10px; /* Bordas arredondadas apenas do lado esquerdo */
+}
+
+.form-container {
+  flex: 1; /* O formulário ocupa metade do container */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o formulário */
+}
+
+h2 {
+  color: #ff69b4; /* Cor do título rosa mais escuro */
+  text-align: center; /* Centraliza o título */
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ff69b4; /* Bordas rosas */
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #ff69b4; /* Botão rosa */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Botão ocupa toda a largura */
+}
+
+button:hover {
+  background-color: #ff1493; /* Rosa mais escuro ao passar o mouse */
+}

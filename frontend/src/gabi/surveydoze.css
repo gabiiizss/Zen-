@@ -1,0 +1,56 @@
+.survey-container {
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Aumenta o espaçamento entre os quadrados */
+  margin-top: 20px;
+}
+
+.options label {
+  display: flex;
+  align-items: center; /* Mantém o texto alinhado verticalmente com o quadrado */
+  gap: 10px; /* Espaço entre o texto e a cor */
+}
+
+.color-circle {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-color: rgba(0, 0, 0, 0.338);
+}
+
+.selected {
+  border: 2px solid #eae3e3b6;
+}
+
+.transparente {
+  background-color: rgba(223, 216, 216, 0.751);
+}
+
+.branca {
+  background-color: #f3f1f1;
+}
+
+.cinza {
+  background-color: #a4a4a4;
+}
+
+.amarela {
+  background-color: #f1f146c7;
+}
+
+.verde {
+  background-color: #7a9d7a;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

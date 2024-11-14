@@ -1,0 +1,101 @@
+.survey-container {
+  width: 80%;
+  max-width: 400px;
+
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0336c;
+}
+
+/* survey.css */
+
+.survey-container {
+  padding: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.option-input {
+  display: none;
+}
+
+.option-box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: relative;
+}
+
+.option-box.selected {
+  border-color: #ff69b4;
+  /* Cor de destaque quando selecionado */
+}
+
+.option-box.selected::before {
+  content: 'X';
+  font-size: 16px;
+  color: #ff69b4;
+  /* Cor do X */
+  position: absolute;
+}
+
+.option-input:checked+.option-box {
+  border-color: #ff69b4;
+  /* Cor de destaque quando selecionado */
+}
+
+.option-input:checked+.option-box::before {
+  content: 'X';
+  color: #ff69b4;
+  /* Cor do X */
+}

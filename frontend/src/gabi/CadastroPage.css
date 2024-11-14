@@ -1,0 +1,68 @@
+.cadastro-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce4ec; /* Fundo rosa suave */
+    padding: 20px;
+  }
+  
+  .cadastro-content {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espaço entre a imagem e o formulário */
+  }
+  
+  .cadastro-image {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 50px; /* Mais arredondado */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cadastro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px; /* Borda mais arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .cadastro-form h2 {
+    color: #e91e63;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .cadastro-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Inputs com bordas arredondadas */
+    font-size: 16px;
+  }
+  
+  .cadastro-form button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px; /* Botão arredondado */
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cadastro-form button:hover {
+    background-color: #d81b60;
+  }
+  

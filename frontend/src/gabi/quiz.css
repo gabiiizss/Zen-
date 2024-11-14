@@ -1,0 +1,124 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  padding: 20px;
+  width: 100%;
+}
+
+.options-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  grid-gap: 20px; /* Espaçamento entre os cards */
+  width: 100%;
+  max-width: 500px; /* Largura máxima ajustada para 2 colunas */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 225px; /* Largura dos cards */
+  height: 220px; /* Altura dos cards */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px; /* Espaçamento interno dos cards */
+}
+
+.question-card:hover {
+  transform: scale(1.05);
+}
+
+.question-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid #f9d8e2; /* Cor da borda */
+}
+
+.option-text {
+  font-size: 16px;
+  color: #353535;
+}
+
+.option.selected {
+  background-color: #f9d8e26d;
+  border-color: #d50072;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-top: 1px solid #e2e4e8;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.navigation button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.navigation button:not(:disabled):hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.navigation button:nth-child(1) {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.navigation button:nth-child(2) {
+  background-color: #a40042;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #f3f4f6;
+  border-top: 1px solid #e2e4e8;
+  color: #666;
+}
+
+.espaço {
+  padding-top: 10px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.question-card.selected {
+  border-color: #ff4081; /* Cor de destaque quando selecionado */
+  transform: scale(1.05); /* Efeito de zoom quando selecionado */
+}
+
+.option-text {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}

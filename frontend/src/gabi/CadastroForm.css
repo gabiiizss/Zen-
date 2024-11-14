@@ -1,0 +1,110 @@
+/* Estilos principais da página de cadastro */
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+.left-section, .right-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-section img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Define o tamanho máximo da imagem */
+  border-radius: 10px;
+}
+
+.right-section {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-box input:focus {
+  border-color: #ff66b2; /* Foco na cor rosa */
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 102, 178, 0.5);
+}
+
+.button input {
+  background-color: #ff66b2; /* Botão rosa */
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button input:hover {
+  background-color: #d9006c; /* Botão mais escuro ao passar o mouse */
+}
+
+.text {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.text a {
+  color: #ff66b2;
+  text-decoration: none;
+}
+
+.text a:hover {
+  color: #d9006d00;
+}
+
+@media (max-width: 768px) {
+  .cadastro-container {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .left-section img {
+    max-width: 300px;
+  }
+
+  .right-section {
+    padding: 20px;
+  }
+}
+

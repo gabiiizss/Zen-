@@ -1,0 +1,105 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.options-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Altera para 3 colunas */
+  gap: 20px; /* Espaçamento entre os cards */
+  width: 100%;
+  max-width: 800px; /* Aumenta a largura máxima para suportar 3 cards */
+  margin: 0 auto;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* O card ocupa 100% da largura permitida pela coluna */
+  max-width: 225px; /* Limita a largura máxima do card */
+  height: 220px;
+  padding: 15px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.question-card:hover {
+  transform: scale(1.08);
+  background-color: #f9f9f9;
+}
+
+.question-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  border: 3px solid #f8d8e2;
+}
+
+.option-text {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.option.selected {
+  background-color: #ffd3e1;
+  border-color: #c2185b;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fafafa;
+  border-top: 2px solid #dedede;
+}
+
+.navigation button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.navigation button:not(:disabled):hover {
+  background-color: #4b4b4b;
+  color: #ffffff;
+}
+
+.navigation button:nth-child(1) {
+  background-color: #ececec;
+  color: #444444;
+}
+
+.navigation button:nth-child(2) {
+  background-color: #c2185b;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #d9d9d9;
+  color: #666666;
+}

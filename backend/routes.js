@@ -3,7 +3,7 @@ const connection = require('./db');
 const router = express.Router();
 
 // Rota para listar todos os registros
-router.get('/cadastros', (req, res) => {
+router.get('/cadastro', (req, res) => {
   connection.query('SELECT * FROM cadastro', (err, results) => {
     if (err) {
       console.error('Erro ao buscar os registros:', err);
@@ -14,8 +14,10 @@ router.get('/cadastros', (req, res) => {
   });
 });
 
+
+
 // Rota para buscar um registro específico pelo ID
-router.get('/cadastros/:id', (req, res) => {
+router.get('/cadastro/:id', (req, res) => {
   const { id } = req.params;
   connection.query('SELECT * FROM cadastro WHERE id = ?', [id], (err, results) => {
     if (err) {
@@ -32,10 +34,10 @@ router.get('/cadastros/:id', (req, res) => {
 });
 
 // Rota para criar um novo registro
-router.post('/cadastros', (req, res) => {
-  const { nome, email, cpf, endereco, telefone, senha } = req.body;
-  connection.query('INSERT INTO cadastro (nome, email, cpf, endereco, telefone, senha) VALUES (?, ?, ?, ?, ?, ?)', 
-    [nome, email, cpf, endereco, telefone, senha], (err, result) => {
+router.post('/cadastro', (req, res) => {
+  const { nome, email, cpf, telefone, senha } = req.body;
+  connection.query('INSERT INTO cadastro (nome, email, cpf,  telefone, senha) VALUES (?, ?, ?, ?, ?)', 
+    [nome, email, cpf,  telefone, senha], (err, result) => {
     if (err) {
       console.error('Erro ao criar o registro:', err);
       res.status(500).json({ error: 'Erro ao criar o registro' });
@@ -46,11 +48,11 @@ router.post('/cadastros', (req, res) => {
 });
 
 // Rota para atualizar um registro existente pelo ID
-router.put('/cadastros/:id', (req, res) => {
+router.put('/cadastro/:id', (req, res) => {
   const { id } = req.params;
-  const { nome, email, cpf, endereco, telefone, senha } = req.body;
-  connection.query('UPDATE cadastro SET nome = ?, email = ?, cpf = ?, endereco = ?, telefone = ?, senha = ? WHERE id = ?', 
-    [nome, email, cpf, endereco, telefone, senha, id], (err, result) => {
+  const { nome, email, cpf,  telefone, senha } = req.body;
+  connection.query('UPDATE cadastro SET nome = ?, email = ?, cpf = ?,  telefone = ?, senha = ? WHERE id = ?', 
+    [nome, email, cpf, telefone, senha, id], (err, result) => {
     if (err) {
       console.error('Erro ao atualizar o registro:', err);
       res.status(500).json({ error: 'Erro ao atualizar o registro' });
@@ -61,7 +63,7 @@ router.put('/cadastros/:id', (req, res) => {
 });
 
 // Rota para excluir um registro pelo ID
-router.delete('/cadastros/:id', (req, res) => {
+router.delete('/cadastro/:id', (req, res) => {
   const { id } = req.params;
   connection.query('DELETE FROM cadastro WHERE idCadastro = ?', [id], (err, result) => {
     if (err) {

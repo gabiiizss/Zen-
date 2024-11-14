@@ -1,13 +1,19 @@
 // Home
 import React from "react";
+import Sob from "../Components/Sobre";
+import StarRating from '../Components/Estrelas';
+import Cards from "../Components/Card";
+import Navisa from "../Components/Navisa"
+import Roda from "../Components/Footer";
 
-
-function Home(){
+function Home() {
   return (
     <>
-      <div>
-        <h2>Página Home</h2>
-      </div>
+      <Navisa />
+      <Sob />
+      <StarRating />
+      <Cards />
+      <Roda />
     </>
   );
 };

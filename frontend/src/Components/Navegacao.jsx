@@ -1,27 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import exampleImage from '../imagens/sem_beje-removebg-preview.png'; // Substitua pelo caminho da sua imagem
 
-const Header = () => {
+const ImageLink = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/contato">Contato</Link>
-          </li>
-          <li>
-            <Link to="/cadastro">Cadastro</Link>
-          </li>
-          <li>
-            <Link to="/listaUsuarios">Lista de Usuários</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div>
+      <Link to="/home">
+        <img src={exampleImage} alt="Ir para Home" style={{ cursor: 'pointer', width: '100px' }} />
+      </Link>
+    </div>
   );
 };
 
-export default Header;
+export default ImageLink;

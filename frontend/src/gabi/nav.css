@@ -1,0 +1,83 @@
+/* Estilo base */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #cf0f0f00;
+  padding: 20px;
+  position: relative;
+
+}
+
+.logo {
+  height: 100px;
+  margin-right: auto;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: transparent;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #df1818;
+}
+
+/* Menu hambúrguer */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #df1818;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li a {
+  color: black;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}

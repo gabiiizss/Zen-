@@ -1,0 +1,77 @@
+.star-rating {
+    display: flex;
+    direction: row;
+    font-size: 2rem;
+    padding-left: 3px;
+}
+
+.star-rating .star {
+    color: rgb(228, 213, 0);
+}
+
+
+
+.numero {
+    padding-top: 20px; 
+}
+
+.numeroo{
+    padding-top: 20px; 
+    padding-left: 6%;
+}
+
+.titulo {
+    padding-top: 65px;
+    text-align: center;
+}
+
+.celular {
+    display: block;
+    margin: 10px auto;
+    width: 48%;
+    max-width: 120%;
+    padding-top: 2%;
+    
+}
+.cel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.celular {
+    flex: 1;
+    max-width: 260px;
+    margin: 0 20px;
+}
+
+.celular img {
+    width: 100%;
+    height: auto; 
+}
+
+.baixe {
+    flex: 1;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 20px;
+    max-width: 300px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f4436f;
+}
+.porque {
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+
+.avali {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
